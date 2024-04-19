@@ -17,19 +17,32 @@ namespace GameUnits
             su.Move();
 
 
-            Console.WriteLine($"Military health {attackUnit.Health}");
+            Console.WriteLine($"Military unit's health {attackUnit.Health}");
 
-            Console.WriteLine($"Settler Health {su.Health}");
+            Console.WriteLine($"Settler unit's health {su.Health}");
 
 
-            Console.WriteLine($"Cost of Military {attackUnit.Cost}");
-            Console.WriteLine($"Cost of Settler {su.Cost}");
+            Console.WriteLine($"Cost of Military unit {attackUnit.Cost}");
+            Console.WriteLine($"Cost of Settler unit {su.Cost}");
 
 
             attackUnit.Attack(su); 
-            Console.WriteLine($"Settler Health after: {su.Health}");
+            Console.WriteLine($"Settler unit's health after: {su.Health}");
 
-           
+            Unit[] units = new Unit[]
+            {
+                new MilitaryUnit(3, 10, 2),
+                new MilitaryUnit(4, 5, 3),
+                new SettlerUnit(),
+            };
+
+            (units[0] as MilitaryUnit).Attack(units[1]);
+            (units[0] as MilitaryUnit).Attack(units[2]);
+
+            foreach (Unit u in units)
+            {
+                Console.WriteLine(u.ToString());
+            }
         }
     }
 }
