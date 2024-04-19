@@ -2,20 +2,16 @@ using System;
 
 namespace GameUnits
 {
-    public sealed class MilitaryUnit : Unit
+    public class MilitaryUnit : XPUnit
     {
 
         private int movement; 
 
         public int AttackPower {get; }
 
-
-        public int XP {get; private set; }
-
-
         public override int Health 
         { 
-            get => base.Health;         
+            get => base.Health;
             set => base.Health = value + XP; 
         }
 
@@ -28,19 +24,19 @@ namespace GameUnits
 
         public MilitaryUnit(
             int mov, int health, int attackPower) : base(mov, health)
-        {                         
-            XP          = 0;                                           
+        {                          
             AttackPower = attackPower;
+
             movement    = mov;
         }
 
 
+        //
         public override void Move()
         {
             movement++;
 
             Console.WriteLine(movement);
-            
         }
 
         public void Attack(Unit u)
@@ -52,8 +48,11 @@ namespace GameUnits
 
         public override string ToString()
         {
-            return base.ToString() + $" AP={AttackPower} XP={XP}";
+            return base.ToString() + $" AP={AttackPower}";
+
         }
 
+
+        
     }
 }
