@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUnits", "GameUnits\Game
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVsStruct", "ClassVsStruct\ClassVsStruct.csproj", "{BD81B661-F621-4C96-B698-3FA76F7F119C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideVsNew", "OverrideVsNew\OverrideVsNew.csproj", "{DBF3AC77-698D-4AF2-8B26-9CAAB3632057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{BD81B661-F621-4C96-B698-3FA76F7F119C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD81B661-F621-4C96-B698-3FA76F7F119C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD81B661-F621-4C96-B698-3FA76F7F119C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF3AC77-698D-4AF2-8B26-9CAAB3632057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF3AC77-698D-4AF2-8B26-9CAAB3632057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF3AC77-698D-4AF2-8B26-9CAAB3632057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF3AC77-698D-4AF2-8B26-9CAAB3632057}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
